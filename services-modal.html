@@ -1,0 +1,54 @@
+<!-- Service Request Modal -->
+<div id="serviceModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Оформление заявки</h2>
+        <form id="serviceRequestForm" onsubmit="submitServiceRequest(event)">
+            <input type="hidden" id="serviceType" name="serviceType">
+            
+            <div class="form-group">
+                <label for="clientName">Ваше имя *</label>
+                <input type="text" id="clientName" name="clientName" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="clientPhone">Телефон *</label>
+                <input type="tel" id="clientPhone" name="clientPhone" required placeholder="+7 (999) 123-45-67">
+            </div>
+            
+            <div class="form-group">
+                <label for="clientEmail">Email</label>
+                <input type="email" id="clientEmail" name="clientEmail" placeholder="example@mail.ru">
+            </div>
+            
+            <div class="form-group">
+                <label for="projectDescription">Описание проекта</label>
+                <textarea id="projectDescription" name="projectDescription" rows="4" placeholder="Расскажите о вашем проекте, пожеланиях и сроках..."></textarea>
+            </div>
+            
+            <div class="form-group">
+                <label for="budget">Бюджет</label>
+                <select id="budget" name="budget">
+                    <option value="">Выберите бюджет</option>
+                    <option value="до 15000">до 15 000 ₽</option>
+                    <option value="15000-30000">15 000 - 30 000 ₽</option>
+                    <option value="30000-50000">30 000 - 50 000 ₽</option>
+                    <option value="50000-100000">50 000 - 100 000 ₽</option>
+                    <option value="100000+">100 000 ₽ и выше</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label for="deadline">Желаемые сроки</label>
+                <input type="date" id="deadline" name="deadline">
+            </div>
+            
+            <button type="submit" class="submit-btn">
+                <i class="fas fa-paper-plane"></i>
+                Отправить заявку
+            </button>
+            
+            <div id="formMessage" style="display: none; margin-top: 1rem; padding: 1rem; border-radius: 10px;"></div>
+        </form>
+    </div>
+</div>

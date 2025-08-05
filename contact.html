@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты - Милые Сайты</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-cat"></i>
+                <span>Милые Сайты</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="services.html">Услуги</a></li>
+                <li><a href="portfolio.html">Портфолио</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <h1>Свяжитесь с нами</h1>
+        <p>Готовы создать ваш идеальный сайт? Давайте обсудим!</p>
+    </header>
+
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h2>Контактная информация</h2>
+                    <p>Я всегда рада новым проектам и интересным задачам! Свяжитесь со мной любым удобным способом.</p>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Телефон</h3>
+                            <a href="tel:+79914331424">+7 (991) 433-14-24</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Email</h3>
+                            <a href="mailto:akulovamillena@yandex.ru">akulovamillena@yandex.ru</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fab fa-telegram"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Telegram</h3>
+                            <a href="https://t.me/charm_loneliness" target="_blank">@charm_loneliness</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fab fa-vk"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>ВКонтакте</h3>
+                            <a href="https://vk.com/charm_loneliness" target="_blank">vk.com/charm_loneliness</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-container">
+                    <h2>Быстрая связь</h2>
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Ваше имя</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Телефон</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="service">Тип услуги</label>
+                            <select id="service" name="service">
+                                <option value="">Выберите услугу</option>
+                                <option value="landing">Лендинг</option>
+                                <option value="shop">Интернет-магазин</option>
+                                <option value="corporate">Корпоративный сайт</option>
+                                <option value="support">Поддержка сайта</option>
+                                <option value="other">Другое</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Сообщение</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Расскажите о вашем проекте..." required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="submit-btn">
+                            <i class="fas fa-paper-plane"></i>
+                            Отправить сообщение
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="working-hours">
+        <div class="container">
+            <h2>График работы</h2>
+            <div class="hours-info">
+                <div class="hours-item">
+                    <i class="fas fa-clock"></i>
+                    <div>
+                        <h3>Рабочие дни</h3>
+                        <p>Понедельник - Пятница: 9:00 - 18:00</p>
+                    </div>
+                </div>
+                <div class="hours-item">
+                    <i class="fas fa-calendar-weekend"></i>
+                    <div>
+                        <h3>Выходные</h3>
+                        <p>Суббота - Воскресенье: по договоренности</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Милые Сайты. Сделано с ❤️ и 🐱</p>
+        </div>
+    </footer>
+
+    <script src="telegram-form.js"></script>
+    
